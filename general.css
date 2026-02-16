@@ -1,0 +1,77 @@
+:root {
+    --rose_foncer:#A30B37;
+    --rose_moyen:#C54F6B;
+    --rose_tres_foncer:#7f1734;
+    --rose_clair_foncer:#f2bdcd;
+}
+
+body{
+    min-height: 100vh;
+    background-image: linear-gradient(135deg,
+    var(--rose_tres_foncer) 0%,
+    var(--rose_foncer) 30%,
+    var(--rose_moyen) 70%,
+    var(--rose_clair_foncer) 100%);
+
+    background-attachment: fixed;
+    color: var(--rose_moyen);
+    font-family: Snell Roundhand, cursive;
+    font-size: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    color: white;
+}
+button{
+    background-image: linear-gradient(135deg,
+    var(--rose_moyen) 0%,
+    var(--rose_clair_foncer) 100%,
+    var(--rose_foncer) 70%);
+    color: white;
+    padding: .4rem .8rem;
+    border: none;
+    border-radius: .3rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+button:hover{
+    background-image: linear-gradient(135deg,
+    var(--rose_tres_foncer) 0%,
+    var(--rose_foncer) 80%,
+    var(--rose_moyen) 100%);
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(163, 11, 55, 0.5);
+}
+button:disabled {
+    opacity: 0.4;
+    cursor: default;
+}
+#lettres{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .4rem;
+    justify-content: center;
+}
+#reset{
+    width: fit-content;
+    margin: 1rem auto 0;
+    padding: 0.8rem 2rem;
+    font-size: 1.3rem;
+}
+#msg{
+    min-height: 1.5rem;
+    color: white;
+}
+#mot {
+    font-size: 2rem;
+    letter-spacing: 0.5rem;
+    margin-bottom: 2rem;
+    color: white;
+    font-weight: bold;
+}
+
