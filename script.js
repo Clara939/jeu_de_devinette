@@ -100,7 +100,7 @@ function seeLetter(pos, lettre){
 // verification victoire
 function verifWin(){
   if (!motAffiche.includes("_")){
-    msgP.innerHTML = "Bravo, tu as trouvé le mot ! 🎉";
+    msgP.innerHTML = "🦄 Bravo, tu as trouvé le mot ! 🎉";
     revealWord();
     disabledLetter();
   }
